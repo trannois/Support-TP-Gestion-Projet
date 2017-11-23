@@ -1,0 +1,13 @@
+{
+  "require": {
+    "components/jquery": "3.*",
+    "twbs/bootstrap": "3.*"
+  },
+
+  "scripts": {
+    "post-update-cmd": [
+        "ln -s ../vendor/components/jquery/ ./public/jquery",
+        "ln -s ../vendor/twbs/bootstrap/dist/ ./public/bootstrap"
+      ]
+  }
+}
